@@ -6,11 +6,11 @@ while tries < 10:
   tries += 1
   guess = int(input(' enter a number: '))    
   if guess < secret_number:
-    print(str(10 - tries) + ' Attempts left : your guess is low')
+    print(str(10 - tries) + ' Attempts left : Your guess is lower.. Try Again')
   elif guess > secret_number:
-    print(str(10 - tries) + ' Attempts left : your guess is high')
+    print(str(10 - tries) + ' Attempts left : Your guess is higher.. Try Again')
   else: 
-    print( "you guessed right with " + str(10 - tries) + ' attempts left!')
+    print( "You guessed right with " + str(10 - tries) + ' attempts stil left!')
     break
 
 if guess != secret_number and tries == 10:
